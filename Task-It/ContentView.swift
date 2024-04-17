@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selection = 0
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView(selection: $selection) {
+            taskViewerView()
+                .tabItem {
+                    Label("Tasks", systemImage: "tray.full.fill")
+                }
+                .tag(0)
+            createTaskView()
+                .tabItem {
+                    Label("Task-It", systemImage: "square.and.pencil")
+                }
+                .tag(1)
         }
-        .padding()
     }
 }
 

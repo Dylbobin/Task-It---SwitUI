@@ -7,22 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9787B8DD2B9A3B400014CD8E /* Task_ItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787B8DC2B9A3B400014CD8E /* Task_ItApp.swift */; };
-		9787B8DF2B9A3B400014CD8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787B8DE2B9A3B400014CD8E /* ContentView.swift */; };
+		0F8E86722BD6E38900E47A62 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8E86712BD6E38900E47A62 /* TodoModel.swift */; };
+		0F8E86742BD6E3B600E47A62 /* ToDoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8E86732BD6E3B600E47A62 /* ToDoListViewModel.swift */; };
+		0F8E86762BD6E3D200E47A62 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8E86752BD6E3D200E47A62 /* ToDoListView.swift */; };
+		0F8E86782BD6E3E100E47A62 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8E86772BD6E3E100E47A62 /* ListRowView.swift */; };
+		0F8E867A2BD6E3F400E47A62 /* AddToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8E86792BD6E3F400E47A62 /* AddToDoView.swift */; };
+		0F8E867C2BD6E40400E47A62 /* NoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8E867B2BD6E40400E47A62 /* NoItemView.swift */; };
+		0F8E867E2BD6E41500E47A62 /* TaskItMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8E867D2BD6E41500E47A62 /* TaskItMain.swift */; };
 		9787B8E12B9A3B420014CD8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9787B8E02B9A3B420014CD8E /* Assets.xcassets */; };
 		9787B8E42B9A3B420014CD8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9787B8E32B9A3B420014CD8E /* Preview Assets.xcassets */; };
-		97FB6A312BCF7C77005E2012 /* taskViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB6A302BCF7C77005E2012 /* taskViewerView.swift */; };
-		97FB6A332BCF7CBD005E2012 /* createTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB6A322BCF7CBD005E2012 /* createTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F8E86712BD6E38900E47A62 /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		0F8E86732BD6E3B600E47A62 /* ToDoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewModel.swift; sourceTree = "<group>"; };
+		0F8E86752BD6E3D200E47A62 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
+		0F8E86772BD6E3E100E47A62 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		0F8E86792BD6E3F400E47A62 /* AddToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoView.swift; sourceTree = "<group>"; };
+		0F8E867B2BD6E40400E47A62 /* NoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemView.swift; sourceTree = "<group>"; };
+		0F8E867D2BD6E41500E47A62 /* TaskItMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItMain.swift; sourceTree = "<group>"; };
 		9787B8D92B9A3B400014CD8E /* Task-It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task-It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9787B8DC2B9A3B400014CD8E /* Task_ItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task_ItApp.swift; sourceTree = "<group>"; };
-		9787B8DE2B9A3B400014CD8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9787B8E02B9A3B420014CD8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9787B8E32B9A3B420014CD8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		97FB6A302BCF7C77005E2012 /* taskViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskViewerView.swift; sourceTree = "<group>"; };
-		97FB6A322BCF7CBD005E2012 /* createTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +61,13 @@
 		9787B8DB2B9A3B400014CD8E /* Task-It */ = {
 			isa = PBXGroup;
 			children = (
-				9787B8DC2B9A3B400014CD8E /* Task_ItApp.swift */,
-				9787B8DE2B9A3B400014CD8E /* ContentView.swift */,
-				97FB6A322BCF7CBD005E2012 /* createTaskView.swift */,
-				97FB6A302BCF7C77005E2012 /* taskViewerView.swift */,
+				0F8E86712BD6E38900E47A62 /* TodoModel.swift */,
+				0F8E86732BD6E3B600E47A62 /* ToDoListViewModel.swift */,
+				0F8E86752BD6E3D200E47A62 /* ToDoListView.swift */,
+				0F8E86772BD6E3E100E47A62 /* ListRowView.swift */,
+				0F8E86792BD6E3F400E47A62 /* AddToDoView.swift */,
+				0F8E867B2BD6E40400E47A62 /* NoItemView.swift */,
+				0F8E867D2BD6E41500E47A62 /* TaskItMain.swift */,
 				9787B8E02B9A3B420014CD8E /* Assets.xcassets */,
 				9787B8E22B9A3B420014CD8E /* Preview Content */,
 			);
@@ -105,6 +114,7 @@
 				TargetAttributes = {
 					9787B8D82B9A3B400014CD8E = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -143,10 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97FB6A312BCF7C77005E2012 /* taskViewerView.swift in Sources */,
-				97FB6A332BCF7CBD005E2012 /* createTaskView.swift in Sources */,
-				9787B8DF2B9A3B400014CD8E /* ContentView.swift in Sources */,
-				9787B8DD2B9A3B400014CD8E /* Task_ItApp.swift in Sources */,
+				0F8E86762BD6E3D200E47A62 /* ToDoListView.swift in Sources */,
+				0F8E867A2BD6E3F400E47A62 /* AddToDoView.swift in Sources */,
+				0F8E86742BD6E3B600E47A62 /* ToDoListViewModel.swift in Sources */,
+				0F8E86722BD6E38900E47A62 /* TodoModel.swift in Sources */,
+				0F8E867E2BD6E41500E47A62 /* TaskItMain.swift in Sources */,
+				0F8E867C2BD6E40400E47A62 /* NoItemView.swift in Sources */,
+				0F8E86782BD6E3E100E47A62 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,9 +290,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Task-It/Preview Content\"";
+				DEVELOPMENT_TEAM = 29RRTJDS48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,6 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.silva.dylan.Task-It";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,9 +321,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Task-It/Preview Content\"";
+				DEVELOPMENT_TEAM = 29RRTJDS48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

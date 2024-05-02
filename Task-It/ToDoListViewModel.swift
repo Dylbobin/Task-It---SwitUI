@@ -45,8 +45,8 @@ class TodoListViewModel: ObservableObject {
         todos.move(fromOffsets: from, toOffset: to)
     }
     
-    func addTodo(title: String) {
-        let newTodo = TodoModel(title: title, isCompleted: false)
+    func addTodo(title: String, priority: String, date: Date) {
+        let newTodo = TodoModel(title: title, isCompleted: false, priority: priority, date: date)
         todos.append(newTodo)
     }
     

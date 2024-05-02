@@ -10,8 +10,24 @@ struct ListRowView: View {
             
             Spacer()
             
-            Image(systemName: todo.isCompleted ? "checkmark.circle" : "circle")
-                .foregroundColor(todo.isCompleted ? .green : .red)
+            VStack {
+                Image(systemName: todo.isCompleted ? "checkmark.circle" : "circle")
+                    .foregroundColor(todo.isCompleted ? .green : .red)
+            }
+            
+            switch todo.priority {
+                case "low" :
+                    Text("!  ")
+                        .foregroundColor(.green)
+                case "medium" :
+                    Text("!! ")
+                        .foregroundColor(.yellow)
+                case "high" :
+                    Text("!!!")
+                        .foregroundColor(.red)
+                default:
+                    Text("   ")
+            }
         }
         .font(.title2)
         .padding(.vertical,8)

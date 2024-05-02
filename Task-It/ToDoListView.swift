@@ -18,12 +18,17 @@ struct TodoListView: View {
             } else {
                 List {
                     ForEach(todoListViewModel.todos) { todo in
-                        ListRowView(todo: todo)
-                            .onTapGesture {
-                                withAnimation(.linear) {
-                                    todoListViewModel.updateTodo(todo: todo)
+                        VStack(alignment: .leading) {
+                            Text(todo.date.formatted(date: .numeric, time: .omitted))
+                                .font(.system(size: 12))
+                                .padding(.top)
+                            ListRowView(todo: todo)
+                                .onTapGesture {
+                                    withAnimation(.linear) {
+                                        todoListViewModel.updateTodo(todo: todo)
+                                    }
                                 }
-                            }
+                        }
                     }
                     .onDelete(perform: todoListViewModel.deleteTodo)
                     .onMove(perform: todoListViewModel.moveTodo)
